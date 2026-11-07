@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#100d0b">
+  <meta name="description" content="Beithir Forge — a quiet, molten screensaver for the dark hours.">
+  <title>Beithir Forge — Screensaver</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="forge" aria-label="Beithir Forge screensaver">
+    <canvas id="embers" aria-hidden="true"></canvas>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="vignette" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <a class="wordmark" href="#" aria-label="Beithir Forge home"><span class="brand-mark" aria-hidden="true">ᛒ</span> BEITHIR <span class="wordmark-light">/ FORGE</span></a>
+      <div class="status"><span class="status-dot"></span><span>THE FURNACE IS AWAKE</span></div>
+    </header>
+
+    <section class="scene" aria-labelledby="title">
+      <div class="halo halo-one"></div>
+      <div class="halo halo-two"></div>
+      <div class="anvil-wrap" aria-hidden="true">
+        <div class="heat-haze"></div>
+        <div class="molten-core"></div>
+        <div class="anvil">
+          <div class="anvil-top"></div>
+          <div class="anvil-body"></div>
+          <div class="anvil-foot"></div>
+          <div class="anvil-glow"></div>
+        </div>
+      </div>
+      <div class="copy">
+        <p class="eyebrow"><span></span> TEMPERED IN THE DARK</p>
+        <h1 id="title">Where fire<br><em>finds its form.</em></h1>
+        <p class="subline">A moment of stillness, forged in embers.</p>
+      </div>
+      <div class="side-note" aria-hidden="true"><span>VOL. 01</span><i></i><span>EST. IN FIRE</span></div>
+    </section>
+
+    <footer class="bottom-bar">
+      <div class="clock-block"><span class="clock-label">LOCAL TIME</span><time id="clock">--:--:--</time></div>
+      <div class="breath"><span class="breath-line"></span><span>LET THE HEAT SETTLE</span><span class="breath-line"></span></div>
+      <button id="fullscreen" class="full-button" type="button" title="Toggle fullscreen"><span class="fullscreen-icon" aria-hidden="true">⛶</span><span>FULLSCREEN</span></button>
+    </footer>
+    <p class="hint" id="hint">MOVE YOUR CURSOR TO WAKE THE CONTROLS <span>·</span> PRESS <kbd>F</kbd> FOR FULLSCREEN</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
